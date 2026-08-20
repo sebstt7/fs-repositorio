@@ -1,0 +1,36 @@
+body {
+    background-color: #232425;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: #313233;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 170px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-links {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: #b4e600;
+}

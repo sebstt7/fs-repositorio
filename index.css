@@ -221,7 +221,7 @@ body{
 
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 95px;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 30px;
@@ -230,15 +230,31 @@ body{
 .card-projeto {
 
     flex: 1;
-    max-width: 320px;
+    max-width: 320px; /* Aumenta a largura mínima na horizontal */
     min-width: 260px;
+    min-height: 320px; /* Estica o card bastante para baixo */
     background-color: #b4e600;
     border-radius: 16px;
     padding: 12px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 1;
 }
+
+.card-projeto:hover {
+
+   transform: scale(1.08) translateY(-8px); 
+    z-index: 10;                              
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 
+                0 0 15px rgba(121, 121, 121, 0.4); 
+}
+
 
 .card-topo {
 

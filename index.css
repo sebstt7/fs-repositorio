@@ -4,7 +4,16 @@
 
 body{
     background-color: #232425;
-}
+    background-image: 
+    radial-gradient(ellipse 80% 600px at 50% 0%, rgba(180, 230, 0, 0.15), transparent),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  
+     /* Impede que o brilho radial fique se repetindo */
+     background-repeat: no-repeat, repeat, repeat;
+  
+    /* Define o tamanho de cada camada */
+    background-size: 100% 600px, 30px 30px, 30px 30px; }
 
 .menu{
     width: 100%;
@@ -54,8 +63,8 @@ body{
 
 .info {
     min-width: 100vh;
-    padding-top: 100px; /* Empurra o conteúdo para baixo da navbar*/
-    padding-left: 10%; /* Garante a distância da borda esquerda */
+    padding-top: 160px; /* Empurra o conteúdo para baixo da navbar*/
+    padding-left: 20%; /* Garante a distância da borda esquerda */
     display: flex;
     justify-content: left;
     align-items: left;
@@ -76,16 +85,21 @@ body{
     gap: 24px;
     padding-left: 10%;
     margin-top: 24px;
+    padding-left: 20%;
 }
 
 .redes, 
 .redes-active {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    justify-content: center;
    text-decoration: none;
    gap: 8px;
+   color: white;
+   font-family:'Inter', sans-serif; ;
+   font-size: 0.85rem;
+   transition: color 0.2s ease, transform 0.2s ease
 }
 
 /* Efeitos ao passar o mouse */

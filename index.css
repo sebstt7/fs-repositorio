@@ -76,7 +76,6 @@ body{
 }
 
 
-
 .info {
     min-width: 100vh;
     padding-top: 160px; /* Empurra o conteúdo para baixo da navbar*/
@@ -191,11 +190,13 @@ body{
 }
 
 .icon-skill:hover {
+
     transform: scale(1.2); 
     cursor: pointer; 
 }
 
 #projetos {
+
     color: white;
     font-family: 'Chakra Petch', monospace;
     text-transform: uppercase;
@@ -208,9 +209,68 @@ body{
 }
 
 #projetos::before {
+
     content: '';
     display: inline-block;
     width: 4px;
     height: 28px;
     background-color: #b4e600;
+}
+
+.cards-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card-projeto {
+
+    flex: 1;
+    max-width: 320px;
+    min-width: 260px;
+    background-color: #b4e600;
+    border-radius: 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-topo {
+
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-titulo-topo {
+
+    color: #121212;
+    font-family: 'Inter';
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-corpo {
+
+    background-color: #232425;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    color: white;
+    font-family: 'Inter';
+}
+
+.card-corpo h3 {
+
+    margin-top: 0;
+    font-family:'Chakra Petch', sans-serif;
 }

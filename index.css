@@ -114,3 +114,18 @@ body{
     height: 42px; /* Define a altura igual para todos */
     display: block;
 }
+
+
+.skills-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-right: 20%;
+}
+
+
+.skills h1 {    
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+}

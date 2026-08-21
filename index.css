@@ -117,15 +117,33 @@ body{
 
 
 .skills-container {
-    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: right;
-    align-items: right;
-    padding-right: 20%;
+    padding-right: 10%;    
+    align-items: right;     
 }
 
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: right;     /* Alinha o título "SKILLS" com os ícones da direita */
+}
 
-.skills h1 {    
-    font-family: 'Chakra Petch', sans-serif;
-    color: white;
+.skills-titulo {
+    font-family: 'Chakra Petch', monospace;;
+    margin-bottom: 15px;
+    color: #ffffff;            /* Ajuste a cor se necessário */
+}
+
+.icons-skills {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria as 3 colunas */
+    gap: 20px;                             /* Espaço entre os ícones */
+    justify-items: center;
+}
+
+.icon-skill {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }

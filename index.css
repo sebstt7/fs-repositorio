@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+html { scroll-behavior: smooth; }
 
 body{
     background-color: #232425;
@@ -75,7 +76,7 @@ body{
 
 .info-contem {
     margin-bottom: -9px;
-    font-size: 17px;
+    font-size: 20px;
     color: #aaaaaa;
     
 }
@@ -97,7 +98,7 @@ body{
    text-decoration: none;
    gap: 8px;
    color: white;
-   font-family:'Inter', sans-serif; ;
+   font-family:'Inter', sans-serif;
    font-size: 0.85rem;
    transition: color 0.2s ease, transform 0.2s ease
 }
@@ -142,9 +143,10 @@ body{
 .icons-skills {    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 50px;
     align-items: flex-end;
     justify-content: center;
+    margin-top: 5px;
 }
 
 .icon-skill[alt="Git"] {
@@ -153,8 +155,8 @@ body{
 
 
 .icon-skill {
-    width: 90px;
-    height: 90px;
+    width: 105px;
+    height: 105px;
     object-fit: contain;
     display: block;
     margin: 0px;
@@ -164,4 +166,47 @@ body{
 .icon-skill:hover {
     transform: scale(1.2); 
     cursor: pointer; 
+}
+
+#projetos {
+    color: white;
+    font-family: 'Chakra Petch', monospace;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 30%;
+    margin-left: 20%
+}
+
+.projeto-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha o título "PROJETOS" com a direita dos ícones */
+}
+
+
+.projeto-nome {
+    position: absolute;
+    font-size: 18px;
+    top: 12%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%);
+
+    width: 90%;
+    margin: 0;
+
+    color: #000000;
+    font-family:'Inter', sans-serif;
+    text-transform: lowercase;
+    text-align: center;
+
+    pointer-events: none;
+}
+
+
+.card-projeto {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
 }

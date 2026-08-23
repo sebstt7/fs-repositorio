@@ -7,13 +7,14 @@ html {
 }
 
 body {
-  background-color: #232425;
+  background-color: #18181b; /* Cinza escuro profundo */
   background-image: 
-    radial-gradient(ellipse 80% 600px at 50% 0%, rgba(180, 230, 0, 0.15), transparent),
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    radial-gradient(ellipse 80% 600px at 50% 0%, rgba(168, 85, 247, 0.12), transparent), /* Glow roxo de fundo */
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-repeat: no-repeat, repeat, repeat;
   background-size: 100% 600px, 30px 30px, 30px 30px;
+  color: #e4e4e7;
 }
 
 
@@ -164,7 +165,7 @@ main {
 
 .redes:hover, 
 .redes-active:hover {
-  color: #b4e600;
+  color: #a577ce;
   transform: translateY(-2px);
 }
 
@@ -192,11 +193,8 @@ main {
 
 .skills-titulo {
   font-family: 'Chakra Petch', monospace;
-  margin-bottom: 15px;
-  color: #ffffff;
   font-size: 3rem;
-  display: flex;
-  align-items: center;
+  color: #ffffff;
 }
 
 .skill-grid {

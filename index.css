@@ -197,6 +197,7 @@ body{
 
 #projetos {
 
+    scroll-margin-top: 185px;
     color: white;
     font-family: 'Chakra Petch', monospace;
     text-transform: uppercase;
@@ -344,6 +345,7 @@ body{
 
     margin-top: 0;
     margin-left: 0;
+    transform: translateY(-63px);
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -356,7 +358,8 @@ body{
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width:600px;
+    padding: 0 20px;
     margin-top: 60px;
     margin: 40px;
 }

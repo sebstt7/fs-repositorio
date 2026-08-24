@@ -286,7 +286,7 @@ main {
   font-family: 'Chakra Petch', monospace;
   text-transform: uppercase;
   font-size: 2rem;
-  margin-top: 350px;
+  margin-top: 220px;
   margin-left: 20%;
   display: flex;
   align-items: center;
@@ -307,7 +307,6 @@ main {
   gap: 95px;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 30px;
 }
 
 .card-projeto {
@@ -488,7 +487,7 @@ main {
 }
 
 .campo textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .bnt-enviar {
@@ -514,4 +513,24 @@ main {
 
 .bnt-enviar:active {
   transform: translateY(0) scale(0.97);
+}
+
+.gif-enderman {
+    width: 340px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 45px;
+    
+    transform: scaleX(-1) rotate(30deg);
+    transition: transform 0.3s ease;
+}
+
+.gif-enderman:active {
+    
+    transform: scaleX(-1) rotate(40deg) scale(1.05); 
+    filter: drop-shadow(0 0 15px #a855f7);
+}
+
+.gif-enderman {
+    cursor: pointer;
 }

@@ -55,12 +55,10 @@ body {
 
 /* INFORMAÇÕES */
 .info {
-
   grid-area: info;
 }
 
 .subtitulo {
-  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -92,21 +90,19 @@ body {
 }
 
 main {
-
   max-width: 1200px;
   margin: 179px auto 0 auto;
   padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-  "info      foto"
+  "info    foto"
   "redess    skills";
   gap: 15px 40px;
   align-items: start;
 }
 
 .info-contem {
-
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 20px;
@@ -117,7 +113,6 @@ main {
 
 /* Redes Sociais */
 .redess {
-
   grid-area: redess;
   display: flex;
   gap: 24px;
@@ -126,7 +121,6 @@ main {
 }
 
 .perfil-container {
-
   grid-area: foto;
   margin-top: 0;
   padding-left: 0;
@@ -134,9 +128,7 @@ main {
   justify-content: center;
 }
 
-
 .foto-perfil{
-
   width: 240px;
   height: 240px;
   object-fit: cover;
@@ -148,12 +140,10 @@ main {
 }
 
 .foto-perfil:hover{
-
   transform: scale(1.05);
   box-shadow: 0 0 30px #c7933373;
   border-color: #b4e600;
 }
-
 
 .redes, 
 .redes-active {
@@ -183,7 +173,6 @@ main {
 
 /* 4. SEÇÃO SKILLS*/
 .skills-container {
-
   grid-area: skills;
   position: static; 
   display: flex;
@@ -206,13 +195,11 @@ main {
 }
 
 .skill-grid {
-
   width: 65px;
   height: 65px;
   background-color: #ffffff08;
   border: 1px solid #ffffff1f;
   border-radius: 12px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,14 +234,11 @@ main {
   background-color: #27272a;
   border: 1px solid rgba(68, 42, 185, 0.445);
   border-radius: 12px;
-  
-  
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   box-sizing: border-box;
-  
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -265,7 +249,6 @@ main {
 }
 
 .icon-skill {
-
   width: 100%;
   height: 100%;
   max-width: 60px;
@@ -281,7 +264,6 @@ main {
 .icon-skill[src*="java" i] {
   transform:scale(1) translateY(-2px);
 }
-
 
 /*  PROJETOS & CARDS */
 #projetos {
@@ -364,7 +346,6 @@ main {
   flex: 1;
   color: #ffffff;
   font-family: 'Inter', sans-serif;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,7 +353,6 @@ main {
 }
 
 .img-card-corpo {
-
   display: block;
   margin: 0 auto;
   width: 100px;
@@ -383,11 +363,9 @@ main {
   max-width: 280px;       
   height: auto;           
   object-fit: contain;
-
   display: block;
   margin: 50px auto 0;    
   transform: none;       
-
   border-radius: 6px;     
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4); 
 }
@@ -397,17 +375,14 @@ main {
   max-width: 280px;       
   height: auto;          
   object-fit: contain;
-
   display: block;
   margin: 20px auto 0;   
   transform: none;       
-  
   border-radius: 6px;   
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .img-cadastro {
-
   width: 100% !important;
   max-width: 280px !important;
   height: auto !important;
@@ -498,7 +473,6 @@ main {
   align-items: center;
 }
 
-
 .form-contato {
   display: flex;
   flex-direction: column;
@@ -573,21 +547,35 @@ main {
 }
 
 .gif-enderman {
-    width: 340px;
-    height: auto;
-    margin-left: 50px;
-    margin-top: 45px;
-    
-    transform: scaleX(-1) rotate(30deg);
-    transition: transform 0.3s ease;
+  width: 340px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 45px;
+  transform: scaleX(-1) rotate(30deg);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .gif-enderman:active {
-    
-    transform: scaleX(-1) rotate(40deg) scale(1.05); 
-    filter: drop-shadow(0 0 15px #a855f7);
+  transform: scaleX(-1) rotate(40deg) scale(1.05); 
+  filter: drop-shadow(0 0 15px #a855f7);
 }
 
-.gif-enderman {
-    cursor: pointer;
+@media (max-width: 1024px) {
+  .menu {
+    padding-right: 40px;
+  }
+
+  /* Faz o título alinhar dinamicamente com a borda dos cards */
+  #projetos {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px; /* Alinhe com a largura máxima da área dos seus cards */
+    padding-left: 20px; /* Evita que cole na borda em telas muito pequenas */
+    box-sizing: border-box;
+  }
+
+  .cards-container {
+    gap: 24px;
+  }
 }

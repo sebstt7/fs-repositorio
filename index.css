@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  zoom: 1.1;
   background: #0a0e17;
   background-image:
     linear-gradient(rgba(59, 130, 246, 0.10) 1px, transparent 1px),
@@ -266,7 +267,8 @@ main {
   display: inline-block;
   width: 4px;
   height: 28px;
-  background-color: #e60086;
+  background-color: #5747e6;
+  box-shadow: 0 0 10px #80d8ee66;
 }
 
 .cards-container {

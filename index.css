@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -19,8 +18,7 @@ body {
   background-size: 30px 30px, 30px 30px, cover, cover;
 }
 
-
-/*  NAVBAR / MENU */
+/* NAVBAR / MENU */
 .menu {
   width: 100%;
   height: 60px;
@@ -69,11 +67,11 @@ body {
 }
 
 #sobremim {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 229px;
 }
 
 .subtitulo h1 {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 2.3rem;
@@ -93,17 +91,18 @@ body {
 }
 
 main {
-  max-width: 950px;
-  margin: 150px auto 0 auto;
+  max-width: 900px;
+  margin: 217px auto 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr 220px;
   grid-template-areas: 
-  "info    foto"
-  "redess    redess"
-  "skills    skills";
-  gap: 20px 30px;
+    "info    foto"
+    "redess  foto"
+    "skills  skills";
+  gap: 15px 25px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .info-contem {
@@ -127,7 +126,7 @@ main {
 .perfil-container {
   grid-area: foto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .foto-perfil {
@@ -170,7 +169,7 @@ main {
   display: block;
 }
 
-/* 4. SEÇÃO SKILLS*/
+/* SEÇÃO SKILLS */
 .skills-container {
   grid-area: skills;
   display: flex;
@@ -213,24 +212,16 @@ main {
 }
 
 .skill-card:hover {
-
   transform: translateY(-3px);
-  border-color: #60a5fa;
+  border-color: #a855f7;
   cursor: pointer;
 }
 
 .skill-nome {
-
   font-size: 13px;
   color: #e2e8f0;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-}
-
-.skill-card:hover {
-  transform: translateY(-3px);
-  border-color: #a855f7;
-  cursor: pointer;
 }
 
 .icon-skill {
@@ -245,16 +236,15 @@ main {
 .icon-css { color: #38bdf8; }
 .icon-html { color: #f97316; }
 
-/*  PROJETOS & CARDS */
+/* PROJETOS & CARDS */
 #projetos {
   scroll-margin-top: 100px;
   color: #ffffff;
-  font-family: 'Chakra Petch', monospace;
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin: 80px auto 20px auto; 
-  max-width: 950px;           
-  padding: 0 20px;          
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3rem;
+  margin: 180px auto 20px auto;
+  max-width: 900px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -262,31 +252,21 @@ main {
   box-sizing: border-box;
 }
 
-#projetos::before {
-  content: '';
-  display: inline-block;
-  width: 4px;
-  height: 28px;
-  background-color: #5747e6;
-  box-shadow: 0 0 10px #80d8ee66;
-}
-
 .cards-container {
   display: flex;
-  justify-content: flex-start;
-  gap: 24px;
+  justify-content: flex-start; /* Garante alinhamento inicial na mesma reta */
+  gap: 20px;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 950px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
 .card-projeto {
-  flex: 1;
-  max-width: 320px;
-  min-width: 260px;
+  flex: 1 1 260px;
+  max-width: 273px;
   min-height: 420px;
   background-color: #27272a;
   border: 1px solid #a855f74d;
@@ -295,18 +275,19 @@ main {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
   outline: none;
   position: relative;
   z-index: 1;
 }
 
+/* Hover padronizado e limpo sem deformar a largura */
 .card-projeto:hover {
-  transform: scale(1.08) translateY(-8px);
+  transform: translateY(-6px);
   z-index: 10;
   border-color: #b4e600;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(121, 121, 121, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 12px rgba(180, 230, 0, 0.2);
 }
 
 .card-topo {

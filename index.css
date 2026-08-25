@@ -312,7 +312,7 @@ main {
 
 .card-titulo-topo {
   color: #fdfdfd;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -324,7 +324,7 @@ main {
   padding: 20px;
   flex: 1;
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,7 +333,7 @@ main {
 
 .card-corpo h3 {
   margin-top: 0;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Botão GitHub dos Projetos */

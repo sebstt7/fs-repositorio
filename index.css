@@ -487,3 +487,20 @@ main {
 .bnt-enviar:active {
   transform: translateY(0) scale(0.97);
 }
+
+.minecraft-skills {
+
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  margin-top: 35px;
+  margin-left: 90px;
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.minecraft-skills:active {
+
+  filter: drop-shadow(0 0 15px #00f0ff) drop-shadow(0 0 20px #00a2ff);
+  transform: scale(1.1);
+}

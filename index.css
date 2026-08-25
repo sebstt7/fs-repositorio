@@ -504,3 +504,115 @@ main {
   filter: drop-shadow(0 0 15px #00f0ff) drop-shadow(0 0 20px #00a2ff);
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  body {
+    zoom: 1; /* Remove o zoom fixo em telas pequenas */
+  }
+
+  /* NAVBAR */
+  .menu {
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .menu-links {
+    gap: 16px;
+  }
+
+  .menu-item {
+    font-size: 15px;
+  }
+
+  /* ESTRUTURA PRINCIPAL (Muda Grid para Coluna Única) */
+  main {
+    margin-top: 100px; /* Reduz margem do topo */
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "foto"
+      "info"
+      "redess"
+      "skills";
+    justify-items: center;
+    text-align: center;
+  }
+
+  .subtitulo {
+    align-items: center;
+    text-align: center;
+  }
+
+  .subtitulo h1 {
+    font-size: 1.8rem;
+  }
+
+  .info-contem {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .perfil-container {
+    justify-content: center;
+  }
+
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+  }
+
+  .redess {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* SKILLS */
+  .skills-wrapper {
+    align-items: center;
+  }
+
+  .icons-skills {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de cards no celular */
+    width: 100%;
+  }
+
+  .skill-card {
+    justify-content: center;
+    padding: 10px 20px;
+  }
+
+  .minecraft-skills {
+    margin-left: 0; /* Remove o desvio lateral no celular */
+    margin-top: 20px;
+  }
+
+  /* PROJETOS */
+  #projetos {
+    margin-top: 60px;
+    justify-content: center;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card-projeto {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* FORMULÁRIO DE CONTATO */
+  .titulo-contato {
+    margin-top: 60px;
+  }
+
+  .contato-container {
+    transform: none; /* Corrige o desvio pra cima */
+  }
+
+  .form-contato {
+    width: 100%; /* Ocupa a largura disponível do container */
+    max-width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
+}

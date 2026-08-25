@@ -15,7 +15,7 @@ body {
     linear-gradient(90deg, rgba(59, 130, 246, 0.10) 1px, transparent 1px),
     radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.20) 0%, transparent 40%),
     radial-gradient(circle at 85% 75%, rgba(168, 85, 247, 0.14) 0%, transparent 45%);
-  background-size: 16px 16px, 16px 16px, cover, cover;
+  background-size: 30px 30px, 30px 30px, cover, cover;
 }
 
 
@@ -212,7 +212,7 @@ main {
   background-color: #1a1b234f;
   border: 1px solid rgba(96, 165, 250, 0.15);
   border-radius: 999px;
-  padding: 7px 35px;
+  padding: 7px 60px;
   box-sizing: border-box;
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
@@ -234,7 +234,7 @@ main {
 
 .skill-card:hover {
   transform: translateY(-3px);
-  border-color: #60a5fa;
+  border-color: #a855f7;
   cursor: pointer;
 }
 

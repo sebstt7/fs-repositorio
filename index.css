@@ -22,14 +22,14 @@ body {
 /*  NAVBAR / MENU */
 .menu {
   width: 100%;
-  height: 50px;
-  background-color: #313233;
+  height: 60px;
+  background-color: transparent;
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid #a855f733;
+  border-bottom: 1px solid #4400ff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 170px;
+  padding-right: 180px;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -43,15 +43,15 @@ body {
 }
 
 .menu-item {
-  color: #a1a1aa;
+  color: #fcfcfc;
   text-decoration: none;
   font-size: 17px;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  font-weight: 100;
+  transition: color 0.4s ease;
 }
 
 .menu-item:hover {
-  color: #b4e600;
+  color: #a855f7;
 }
 
 /* INFORMAÇÕES */
@@ -158,7 +158,7 @@ main {
   gap: 8px;
   color: #60a5fa;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.90rem;
   transition: color 0.2s ease, transform 0.2s ease;
   font-weight: 600;
 }
@@ -269,7 +269,7 @@ main {
   display: inline-block;
   width: 4px;
   height: 28px;
-  background-color: #b4e600;
+  background-color: #e60086;
 }
 
 .cards-container {

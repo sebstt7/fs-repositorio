@@ -16,7 +16,7 @@ Site em página única (single page) com seções de apresentação, habilidades
 - Links diretos para redes sociais (GitHub, LinkedIn, Steam, WhatsApp)
 - Layout responsivo com grid CSS
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **HTML5** — estrutura semântica
 - **CSS3** — Grid Layout, Flexbox, animações e efeitos de hover

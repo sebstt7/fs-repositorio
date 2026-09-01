@@ -4,15 +4,21 @@ Portfólio pessoal desenvolvido para apresentar minha trajetória como estudante
 
 🔗 Acesse: https://sebstt7.github.io/fs-repositorio/
 
-- Sobre -
+- Sobre
 
-Site em página única (single page) com seções de apresentação, habilidades técnicas, projetos e formulário de contato. Atualmente cursando a Residência Full Stack 5.0 do Instituto Eldorado, aprofundando conhecimentos em Banco de Dados e Back-End.
+Site em página única (single page) com seções de apresentação, habilidades técnicas, projetos e formulário de contato.
+Atualmente cursando a Residência Full Stack 5.0 do Instituto Eldorado, aprofundando conhecimentos em Banco de Dados e Back-End.
 
-- Funcionalidades -
+- Funcionalidades
+
 Navegação suave (smooth scroll) entre seções via menu fixo
+
 Cards de projeto com efeito hover
+
 Formulário de contato integrado via Formspree
+
 Links diretos para redes sociais (GitHub, LinkedIn, Steam, WhatsApp)
+
 Layout responsivo com grid CSS
 
 - Tecnologias -

@@ -7,6 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#sobremim,
+#projetos,
+#contato {
+  scroll-margin-top: 80px; /* 60px do menu + 20px de respiro */
+}
+
 body {
   margin: 0;
   padding: 0;
